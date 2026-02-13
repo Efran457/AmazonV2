@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Welcome To Check Out</h1>
+<a href="../index.html" style="position: fixed; top: 6px; right: 10px; animation: None">Back</a>
+
+<label class="custom-checkbox">
+    <input type="checkbox" id="BuyCheck" onclick="BuyCheck()">
+    <span class="checkmark"></span>
+    Take An Item
+</label>
+
+
+<div class="radio-container" id="radios">
+    <label class="custom-radio">
+        <input type="radio" name="option" value="1">
+        <span class="radiomark"></span>
+        Square
+    </label>
+    <br>
+    <label class="custom-radio">
+        <input type="radio" name="option" value="2">
+        <span class="radiomark"></span>
+        Circle
+    </label>
+    <br>
+    <label class="custom-radio">
+        <input type="radio" name="option" value="3">
+        <span class="radiomark"></span>
+        Triangle
+    </label>
+</div>
+<button onclick="BuyNow()" style="position: relative;top:10px;left:10px">Place In Cart</button>
+
+
+<script src="itmesBuying.js"></script> <!-- Link the JS file -->
+
+</body>
+</html>
