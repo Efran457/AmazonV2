@@ -1,0 +1,162 @@
+
+html, body {
+    font-family: Verdana;
+    font-size: 40px;
+    background: linear-gradient(#005ec9, #25d1f7);
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+h1 {
+    background: linear-gradient(#087bff, #25d1f7);
+    border-radius: 10px;
+    outline: black solid 4px;
+    color: #262626;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    position: relative;
+    top: 5px;
+}
+
+h2 {
+    text-decoration: underline;
+    text-decoration-thickness: 10px;
+    text-decoration-color: #151515;
+    color: #262626;
+}
+p {
+    background: linear-gradient(#095cbf, #1c90a9);
+    border-radius: 10px;
+    color: #191919;
+}
+label{
+    color: #2d2d2d;
+}
+input {
+    font-size: 22px;
+    background-color: #4287f5;
+    border-radius: 50px;
+    outline: 4px solid black;
+    border: none;
+    color: #2d2d2d;
+}
+a {
+    color: #002548;
+    outline: #040404 solid 3px;
+    margin-left: 10px;
+    background: linear-gradient(#0973bf, #56bae2);
+    border-radius: 10px;
+    font-size: 35px;
+
+    position: relative;
+    animation: moveUpDown 1s infinite ease-in-out;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    display: inline-block;
+    max-width: 100%;
+}
+
+@keyframes moveUpDown {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: -5px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+img {
+    margin: 20px; /* Space around each image */
+    /* For crisp pixel art (no blur) */
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    /* Size control */
+    width: 200px;  /* adjust as needed */
+    height: 200px;
+
+    /* Optional: smooth scaling transition */
+    transition: transform 0.2s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+/* Hide the native checkbox */
+ .custom-checkbox input {
+     display: none;
+ }
+
+/* The visible box */
+.custom-checkbox .checkmark {
+    width: 25px;
+    height: 25px;
+    border: 2px solid black;  /* just border, no fill */
+    border-radius: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px; /* move checkbox 20px to the right */
+    position: relative;
+}
+
+/* Show checkmark only when checked */
+.custom-checkbox input:checked + .checkmark::after {
+    content: "✔";
+    position: absolute;
+    top: -4px;
+    left: 2px;
+    font-size: 25px;
+    color: black;
+}
+
+/* Hide native radio buttons */
+.custom-radio input {
+    display: none;
+}
+
+/* Outer circle */
+.custom-radio .radiomark {
+    width: 25px;
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 50%;    /* circle */
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;     /* move right if needed */
+    position: relative;
+}
+
+/* Inner dot when checked */
+.custom-radio input:checked + .radiomark::after {
+    content: "";
+    position: absolute;
+    top: 6px;   /* center inside circle */
+    left: 6px;
+    width: 12px;
+    height: 12px;
+    background-color: black; /* the dot color */
+    border-radius: 50%;
+}
+
+
+
+
+/* Disabled state - affects entire label including text */
+.custom-radio:has(input:disabled) {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+button {
+    background-color: #4287f5;
+    font-size: 30px;
+    border-radius: 50px;
+    color: #2d2d2d;
+}
