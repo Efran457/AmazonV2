@@ -50,6 +50,9 @@ Built with pure HTML, CSS, and JavaScript - no frameworks, no fancy build tools,
         └── Diamond.png
 ```
 
+## Screenshots
+<img width="477" height="658" alt="calc" src="https://github.com/user-attachments/assets/ac1cfdf4-7681-4982-afd1-eb8ae615bf9d" />
+
 ## 🎮 How to Use
 
 1. **Clone this masterpiece**
