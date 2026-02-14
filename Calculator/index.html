@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Welcome to my Custom Calculator</h1>
+<a href="../index.html" style="position: fixed; top: -10px; right: 10px;">Back</a>
+<div id="calculator">
+    <input  id="display">
+
+    <div id="keys">
+        <!-- Row 1 -->
+        <button onclick="AddText('+')">+</button>
+        <button onclick="AddText('7')">7</button>
+        <button onclick="AddText('8')">8</button>
+        <button onclick="AddText('9')">9</button>
+
+        <!-- Row 2 -->
+        <button onclick="AddText('-')">-</button>
+        <button onclick="AddText('4')">4</button>
+        <button onclick="AddText('5')">5</button>
+        <button onclick="AddText('6')">6</button>
+
+        <!-- Row 3 -->
+        <button onclick="AddText('*')">*</button>
+        <button onclick="AddText('1')">1</button>
+        <button onclick="AddText('2')">2</button>
+        <button onclick="AddText('3')">3</button>
+
+        <!-- Row 4 -->
+        <button onclick="AddText('/')">/</button>
+        <button onclick="calculate()">=</button>
+        <button onclick="AddText('0')">0</button>
+        <button onclick="AddText('.')">.</button>
+
+        <!-- Row 5 (C and Backspace) -->
+        <button onclick="clearAll()" class="wide">C</button>
+        <button onclick="backspace()" class="wide">⌫</button>
+    </div>
+</div>
+
+
+<script src="index.js"></script>
+</body>
+</html>
